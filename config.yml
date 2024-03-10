@@ -2,13 +2,14 @@ baseURL: "https://examplesite.com/"
 title: ftl'logs
 paginate: 5
 theme: PaperMod
+publishDir: docs
 
 params:
 # theme
   showToc: true
   TocOpen: false
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: true
+  # ShowBreadCrumbs: true
+  # ShowCodeCopyButtons: true
   hideMeta: false
   defaultTheme: auto 
   label:
@@ -20,16 +21,18 @@ params:
   profileMode:
     enabled: true
     title: "Shivratna's Cat 'Loki'" # optional default will be site title
-    subtitle: "Loki thinks beyond the norms"
+    subtitle: |
+      Beyond norms, Loki's mind navigates a realm of limitless possibilities.
+      We both share our { unbaked, half-baked, fully-baked } thoughts and theories.
     imageUrl: "/profile/cat.jpg" # optional
     imageTitle: "cat thinking out of the box" # optional
     imageWidth: 220 # custom size
     imageHeight: 220 # custom size
     buttons:
-      - name: Posts
-        url: "/posts/"
-      - name: Archive
-        url: "/archive"  
+      - name: Thoughts
+        url: "/thoughts/"
+      - name: Archives
+        url: "/archives"  
       - name: Github
         url: "https://github.com/"
 
@@ -50,15 +53,13 @@ menu:
       weight: 10
     - identifier: About
       name: About
-      url: /about
+      url: /about/
       weight: 20
     - identifier: projects
       name: Projects
-      url: /projects
+      url: /projects/
       weight: 30
     - identifier: search
       name: Search
       url: /search
       weight: 50
-
-
