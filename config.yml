@@ -1,0 +1,64 @@
+baseURL: "https://examplesite.com/"
+title: ftl'logs
+paginate: 5
+theme: PaperMod
+
+params:
+# theme
+  showToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  hideMeta: false
+  defaultTheme: auto 
+  label:
+    text: "ftl'logs"
+    # icon: /profile/char.jpg
+    iconHeight: 35
+
+  # for homepage
+  profileMode:
+    enabled: true
+    title: "Shivratna's Cat 'Loki'" # optional default will be site title
+    subtitle: "Loki thinks beyond the norms"
+    imageUrl: "/profile/cat.jpg" # optional
+    imageTitle: "cat thinking out of the box" # optional
+    imageWidth: 220 # custom size
+    imageHeight: 220 # custom size
+    buttons:
+      - name: Posts
+        url: "/posts/"
+      - name: Archive
+        url: "/archive"  
+      - name: Github
+        url: "https://github.com/"
+
+  socialIcons: # optional
+    - name: "RSS"
+      url: "<link>"
+    - name: "github"
+      url: "<link>"
+    - name: "linkedIn"
+      url: "<link2>"
+    
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: About
+      name: About
+      url: /about
+      weight: 20
+    - identifier: projects
+      name: Projects
+      url: /projects
+      weight: 30
+    - identifier: search
+      name: Search
+      url: /search
+      weight: 50
+
+
